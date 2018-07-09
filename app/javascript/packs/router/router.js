@@ -1,12 +1,12 @@
-import vue from 'vue/dist/vue.esm.js'
-import VueRoute from 'vue-router'
+import Vue from 'vue/dist/vue.esm.js'
+import VueRouter from 'vue-router'
 import Index from '../components/index.vue'
 import About from '../components/about.vue'
 import Contact from '../components/contact.vue'
 
-Vue.use(VueRoute)
+Vue.use(VueRouter)
 
-export default new VueRoute({
+export default new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', component: Index },
